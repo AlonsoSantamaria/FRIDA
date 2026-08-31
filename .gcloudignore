@@ -1,0 +1,26 @@
+.gcloudignore
+.git
+.gitignore
+.venv/
+.venv-gate4b/
+.gcloud-gate4b/
+data/checkpoints/
+data/*.sqlite3
+!data/frida-final-london-appraisal.sqlite3
+data/**/*.zip
+data/**/*.pdf
+data/**/*.csv
+data/**/*.html
+!data/source-validation/
+!data/source-validation/wp01/
+!data/source-validation/wp01/denue/
+!data/source-validation/wp01/denue/raw/
+!data/source-validation/wp01/denue/raw/denue_22_0525_csv.zip
+!data/source-validation/wp01/denue/raw/denue_22_0526_corrected_csv.zip
+docs/**
+!docs/
+!docs/History docs & images/
+!docs/History docs & images/FRIDA_flower_icon_actual.png
+tmp/
+*.log
+__pycache__/

@@ -1,0 +1,15 @@
+.git
+.env
+__pycache__
+*.py[cod]
+data/
+!data/
+!data/frida-final-london-appraisal.sqlite3
+!data/source-validation/
+!data/source-validation/wp01/
+!data/source-validation/wp01/denue/
+!data/source-validation/wp01/denue/raw/
+!data/source-validation/wp01/denue/raw/denue_22_0525_csv.zip
+!data/source-validation/wp01/denue/raw/denue_22_0526_corrected_csv.zip
+tests/
+spikes/

@@ -1,0 +1,62 @@
+{
+  "event": {
+    "schema_version": "0.1",
+    "event_id": "event-001",
+    "event_type": "fixture.signal.received",
+    "occurred_at": "2026-08-21T18:00:00Z",
+    "correlation_id": "correlation-001",
+    "causation_id": null,
+    "producer": "deterministic-fixture",
+    "idempotency_key": "fixture-001",
+    "payload": {"fixture": true}
+  },
+  "evidence": [
+    {
+      "id": "evidence-001",
+      "investigation_id": "investigation-probe",
+      "source_name": "Controlled public fixture",
+      "source_locator": "fixture://public/example-001",
+      "source_status": "CONTROLLED_PUBLIC",
+      "retrieved_at": "2026-08-21T18:01:00Z",
+      "content_hash": "sha256:fixture-evidence-001"
+    },
+    {
+      "id": "evidence-002",
+      "investigation_id": "investigation-probe",
+      "source_name": "Simulated municipal fixture",
+      "source_locator": "fixture://simulated/example-002",
+      "source_status": "SIMULATED_MUNICIPAL",
+      "retrieved_at": "2026-08-21T18:02:00Z",
+      "content_hash": "sha256:fixture-evidence-002"
+    }
+  ],
+  "claim": {
+    "id": "claim-001",
+    "investigation_id": "investigation-probe",
+    "statement": "Generic contract-test claim; not a FRIDA scenario assertion.",
+    "claim_type": "HYPOTHESIS",
+    "status": "CONTESTED",
+    "created_by": "deterministic-fixture",
+    "created_at": "2026-08-21T18:03:00Z",
+    "confidence_factors": {
+      "evidence_sufficiency": 0.5,
+      "source_independence": 0.4,
+      "contradiction_severity": 0.7
+    }
+  },
+  "links": [
+    {
+      "evidence_id": "evidence-001",
+      "claim_id": "claim-001",
+      "relation": "SUPPORTS",
+      "strength": 0.6
+    },
+    {
+      "evidence_id": "evidence-002",
+      "claim_id": "claim-001",
+      "relation": "CONTRADICTS",
+      "strength": 0.7
+    }
+  ]
+}
+

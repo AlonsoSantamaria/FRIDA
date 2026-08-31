@@ -1,0 +1,33 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+.venv-gate4b/
+.gcloud-gate4b/
+.env
+.env.*
+!.env.example
+dist/
+build/
+.DS_Store
+Thumbs.db
+.codex-review/
+*.log
+data/
+*.sqlite3
+*.db
+*.sqlite
+docs/video/
+*.mp4
+*.wav
+*.mp3
+*.wfp
+scripts/open-frida-operator.ps1
+docs/History docs & images/*
+!docs/History docs & images/FRIDA_flower_icon_actual.png

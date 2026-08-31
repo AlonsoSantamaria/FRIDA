@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "frida-municipal-intelligence"
+version = "0.0.0"
+description = "FRIDA reversible engineering-preparation scaffold"
+requires-python = ">=3.12"
+dependencies = ["pydantic>=2.13,<3", "psycopg[binary]>=3.2,<4"]
+
+[project.optional-dependencies]
+google-runtime = ["google-adk==2.7.1"]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+frida = ["assets/*.png", "assets/*.jpg", "assets/*.svg"]
